@@ -1,0 +1,13 @@
+name: example
+
+on:
+  push:
+    branches: 
+      -master
+
+jobs:
+  My_first:
+    runs-on: self-hosted
+    steps:
+      - name: first step
+        run: echo "hello"
